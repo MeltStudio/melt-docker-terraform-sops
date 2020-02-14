@@ -1,0 +1,10 @@
+version: '3'
+
+
+services:
+  
+  terraform:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: meltstudio/terraform-sops:0.12.20-3.5.0-0.4.1
